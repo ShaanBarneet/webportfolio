@@ -208,13 +208,30 @@
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <a href="mailto:shaanbarneet06@gmail.com"><input type="button" value="Submit" class="contact__button button"></a>
+                    <form onsubmit="sendEmail(); reset(); return false;" action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input" required >
+                        <input type="mail" id="email" placeholder="Email" class="contact__input" required>
+                        <input type="tel" placeholder="Phone" class="contact__input" maxlength="10" minlength="10" pattern="[0-9]{10}">
+                        <textarea name="" placeholder="Type your message....." id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <button type="submit" class="contact__button button">Submit</button>
                     </form>
                 </div>
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script>
+                    function sendEmail(){
+                        Email.send({
+                            Host : "smtp.elasticemail.com",
+                            Username : "1905785@kiit.ac.in",
+                            Password : "FA978FB0886B06EBFDD560344A136194A6D8",
+                            To : '1905785@kiit.ac.in',
+                            From : document.getElementById("email").value,
+                            Subject : "New Contact form enquiry",
+                            Body : "And this is the body"
+                            }).then(
+                            message => alert(message)
+                        );
+                    }
+                </script>
             </section>
         </main>
 
