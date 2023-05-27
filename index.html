@@ -11,6 +11,7 @@
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
         <title>Barneet Panda</title>
+        <link rel="icon" type="image/x-icon" href="BP logo.ico">
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -25,7 +26,8 @@
                         <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work Ex</a></li>
+                        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -175,27 +177,55 @@
                 </div>
             </section>
 
+            <!--===== Experience =====-->
+            <section class="experience section" id="work">
+                <h2 class="section-title">Work Experience</h2>
+
+                <div class="experience__container bd-grid">
+
+                    <div class="experience__block" style="margin-bottom: 25px;">
+                        <a href="https://www.highradius.com/"><img src="assets/img/Yubi.jpeg" style="border-radius: 50%; size: 40%; padding-left: 5vw;" alt="hrc"> </a>
+                        <h3>Fullstack Developer Yubi (Cred Avenue) (Feb 2023 - current)</h3>
+                        <p> Fullstack developer specializing in Common Platforms, contributing to over seven services. Our team focus is on platformization, creating reusable components and services for all verticals. By establishing a solid foundation, I ensure consistent quality and functionality across projects.  </p>
+                        <p>Technologies Used: ReactJS/TS, SpringBoot, ApachePOI, Swagger, Postman NewRelic, MicroMeter, Junit,  Test Modeller, Selenium</p>
+                    </div>
+
+                    <div class="experience__block" style="margin-bottom: 25px;">
+                        <a href="https://www.highradius.com/"><img src="assets/img/Highradius.png" style="border-radius: 50%;" alt="hrc"> </a>
+                        <h3>Fullstack Developer Highradius (June 2022 - Jan 2023)</h3>
+                        <p>Worked on the development of G4 CFO Technology and Treasury Management application </p>
+                        <p>Technologies Used: React, Node, MUI, Java, SQL, SpringMVC, Hibernate, Postman, Redux, Cucumber</p>
+                    </div>
+
+                    <div class="experience__block" style="margin-bottom: 25px;">
+                        <a href="https://www.highradius.com/"><img src="assets/img/Highradius.png" style="border-radius: 50%;" alt="hrc"> </a>
+                        <h3>Summer Intern Highradius (Jan 2022 - Apr 2022)</h3>
+                        <p>Created a full-stack web-based B2B invoice management application.</p>
+                        <p>Technologies Used: React, Node, Python, MUI, Java</p>
+                    </div>
+                </div>
+            </section>
+
             <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Work</h2>
+            <section class="work section" id="projects">
+                <h2 class="section-title">Projects</h2>
 
                 <div class="work__container bd-grid">
                     <div class="work__img">
                         
-                        <a href="
-                        https://drive.google.com/file/d/1hZsgafVwIjhn3JzYHndqahXqPJ2oNMRe/view?usp=sharing"><img src="assets/img/hrc.png" alt="hrc"> </a>
+                        <a href="https://drive.google.com/file/d/1hZsgafVwIjhn3JzYHndqahXqPJ2oNMRe/view?usp=sharing"><img src="assets/img/hrc.png" alt="hrc"> </a>
                     </div>
                     <div class="work__img">
                         <a href="https://calm-atoll-23964.herokuapp.com/"><img src="assets/img/HygieneMedico.png" alt=""></a>
                     </div>
                     <div class="work__img">
-                        <a href="https://djdaaveindia.com"><img src="assets/img/djDaave.png" alt="djDaave"> </a>
+                        <a href="https://veganhof.pages.dev/"><img src="assets/img/Veganhof.png" alt="Veganhof"> </a>
                     </div>
                     <div class="work__img">
                         <a href="https://shaanbarneet.github.io/DJI_Sample/"><img src="assets/img/DJIProject.png" alt=""></a>
                     </div>
                     <div class="work__img">
-                        <a href="https://at-productions.com"><img src="assets/img/atProd.png" alt="atProd"> </a>
+                        <a href="https://atprod.pages.dev/"><img src="assets/img/atProd.png" alt="atProd"> </a>
                     </div>
                     <div class="work__img">
                         <a href="https://shaanbarneet.github.io/CareerNaksha/"><img src="assets/img/CareerNaksha.png" alt=""></a>
@@ -221,10 +251,10 @@
                     function sendEmail(){
                         Email.send({
                             Host : "smtp.elasticemail.com",
-                            Username : "1905785@kiit.ac.in",
-                            Password : "FA978FB0886B06EBFDD560344A136194A6D8",
-                            To : '1905785@kiit.ac.in',
-                            From : document.getElementById("email").value,
+                            Username : "barneetpanda@gmail.com",
+                            Password : "CE39B8D6B6DFE4B1AE7F30E54425C669C8F5",
+                            To : 'barneetpanda@gmail.com',
+                            From : 'barneetpanda@gmail.com',
                             Subject : "New Contact form enquiry",
                             Body : "Email:" +document.getElementById("email").value
                                     +"<br> Name:" +document.getElementById("name").value
