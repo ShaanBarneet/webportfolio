@@ -9,6 +9,7 @@
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
         <title>Barneet Panda</title>
         <link rel="icon" type="image/x-icon" href="BP logo.ico">
@@ -41,39 +42,43 @@
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Barneet</span><br>Fullstack Devloper</h1>
+                <div class="row">
+                    <div class="col-sm-12 home__data" style="">
+                        <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Barneet</span><br>Fullstack Devloper</h1>
 
-                    <a href="#contact" class="button">Contact</a>
-                </div>
+                        <a href="#contact" class="button">Contact</a>
+                    </div>
 
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/barneet-panda-785787193/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="assets/pdf/Resume.pdf" download="Barneet Panda Resume" class="home__social-icon"><i class='bx bxs-file-doc' ></i></a>
-                    <a href="https://github.com/ShaanBarneet" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div>
+                    <div class="col-sm-3 home__social" style="z-index: 5;">
+                        <a href="https://www.linkedin.com/in/barneet-panda-785787193/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                        <a href="assets/pdf/Resume.pdf" download="Barneet Panda Resume" class="home__social-icon"><i class='bx bxs-file-doc' ></i></a>
+                        <a href="https://github.com/ShaanBarneet" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    </div>
 
-                <div class="home__img">
-                    <img src="assets/img/perfil.jpg" alt="">
+                    <div class="col-sm-4 home__img">
+                        <img src="assets/img/perfil.jpg"  alt="">
+                    </div>
                 </div>
             </section>
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
+                <div>
+                    <h2 class="section-title">About</h2>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/about.jpg" alt="">
-                    </div>
+                    <div class="about__container bd-grid">
+                        <div class="about__img">
+                            <img src="assets/img/about.jpg" alt="">
+                        </div>
 
-                    <div>
-                        <h2 class="about__subtitle">I'am Barneet</h2>
-                        <p class="about__text"> An accomplished Full Stack Developer with a strong dedication to individual contribution in software development. My career has revolved around the intricacies of both frontend and backend development, equipped with proficiency in various programming languages and frameworks. My expertise extends beyond coding; I prioritize the fusion of design aesthetics with functionality, ensuring the delivery of visually appealing and highly efficient software solutions.
+                        <div>
+                            <h2 class="about__subtitle">I'am Barneet</h2>
+                            <p class="about__text" style="display: flex; overflow: hidden; width: 100%;"> An accomplished Full Stack Developer with a strong dedication to individual contribution in software development. My career has revolved around the intricacies of both frontend and backend development, equipped with proficiency in various programming languages and frameworks. My expertise extends beyond coding; I prioritize the fusion of design aesthetics with functionality, ensuring the delivery of visually appealing and highly efficient software solutions.
 
-                            In addition to my professional journey, I have built a successful freelancing career as a Front-end Web Developer. Through this experience, I've had the privilege of working on diverse projects, ranging from crafting websites for a medicine company, a production company, to creating an online presence for an international DJ. These freelance endeavors have significantly honed my abilities to deliver top-notch, user-centric web solutions as an individual contributor.
-                            
-                            Armed with a Bachelor's degree in Computer Science and fueled by my profound interest in Prompt Engineering, Web3, and AI, I am enthusiastic about contributing my skills to groundbreaking tech projects. My adaptability to emerging technologies and unwavering commitment to crafting seamless solutions make me an invaluable asset when working independently or within a development team.</p>
+                                In addition to my professional journey, I have built a successful freelancing career as a Front-end Web Developer. Through this experience, I've had the privilege of working on diverse projects, ranging from crafting websites for a medicine company, a production company, to creating an online presence for an international DJ. These freelance endeavors have significantly honed my abilities to deliver top-notch, user-centric web solutions as an individual contributor.
+                                
+                                Armed with a Bachelor's degree in Computer Science and fueled by my profound interest in Prompt Engineering, Web3, and AI, I am enthusiastic about contributing my skills to groundbreaking tech projects. My adaptability to emerging technologies and unwavering commitment to crafting seamless solutions make me an invaluable asset when working independently or within a development team.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -187,29 +192,29 @@
 
                 <div class="experience__container bd-grid">
 
-                    <div class="experience__block">
-                        <a href="https://www.celestica.com/"><img src="assets/img/Celestica.png" style="border-radius: 50%; padding-left: 5vw; height: 50%;" alt="hrc"> </a>
+                    <div class="row experience__block">
+                        <a href="https://www.celestica.com/"><img src="assets/img/Celestica.png" style="border-radius: 50%; size: 40%; height: 50vh; margin-bottom: 50px;" alt="hrc"> </a>
                         <h3>Associate Software Developer @Celestica (July 2023 - Present)</h3>
                         <p>As a DevOps Engineer, my current focus revolves around creating a robust and dynamic pipeline framework on Azure, ensuring seamless deployment processes. I am actively involved in designing and implementing efficient strategies for continuous integration and delivery. Additionally, I am working extensively with the Sonic framework, leveraging its capabilities to enhance application performance and scalability. My role encompasses optimizing infrastructure, automating workflows, and fostering collaboration between development and operations teams to drive efficiency and facilitate seamless software delivery.</p>
                         <p>Technologies Working on:  C, C++, Python, Linux CLI, Docker, Azure DevOps, JIRA and SAAS implementations</p>
                     </div>
 
-                    <div class="experience__block">
-                        <a href="https://www.go-yubi.com/"><img src="assets/img/Yubi.jpeg" style="border-radius: 50%; size: 40%; padding-left: 5vw; margin-bottom: 100px;" alt="hrc"> </a>
+                    <div class="row experience__block">
+                        <a href="https://www.go-yubi.com/"><img src="assets/img/Yubi.jpeg" style="border-radius: 50%; size: 40%; margin-top: 50px; padding-left: 5vw; margin-bottom: 50px;" alt="hrc"> </a>
                         <h3>Fullstack Developer Intern @Yubi (Cred Avenue) (Feb 2023 - Jun 2023)</h3>
                         <p> Fullstack developer specializing in Common Platforms, contributing to over seven services. Our team focus is on platformization, creating reusable components and services for all verticals. By establishing a solid foundation, I ensure consistent quality and functionality across projects.  </p>
                         <p>Technologies Used: ReactJS/TS, SpringBoot, ApachePOI, Swagger, Postman NewRelic, MicroMeter, Junit,  Test Modeller, Selenium</p>
                     </div>
 
-                    <div class="experience__block">
-                        <a href="https://www.highradius.com/"><img src="assets/img/Highradius.png" style="border-radius: 50%; margin-top: 200px; margin-bottom: 100px;" alt="hrc"> </a>
+                    <div class="row experience__block">
+                        <a href="https://www.highradius.com/"><img src="assets/img/Highradius.png" style="border-radius: 50%; margin-top: 50px; margin-bottom: 50px;" alt="hrc"> </a>
                         <h3>Fullstack Developer Intern @Highradius (June 2022 - Jan 2023)</h3>
                         <p>Worked on the development of G4 CFO Technology and Treasury Management application </p>
                         <p>Technologies Used: React, Node, MUI, Java, SQL, SpringMVC, Hibernate, Postman, Redux, Cucumber</p>
                     </div>
 
-                    <div class="experience__block">
-                        <a href="https://www.highradius.com/"><img src="assets/img/Highradius.png" style="border-radius: 50%; margin-top: 200px; margin-bottom: 100px;" alt="hrc"> </a>
+                    <div class="row experience__block">
+                        <a href="https://www.highradius.com/"><img src="assets/img/Highradius.png" style="border-radius: 50%; margin-top: 50px; margin-bottom: 50px;" alt="hrc"> </a>
                         <h3>Summer Intern @Highradius (Jan 2022 - Apr 2022)</h3>
                         <p>Created a full-stack web-based B2B invoice management application.</p>
                         <p>Technologies Used: React, Node, Python, MUI, Java</p>
@@ -308,5 +313,7 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+         <!--===== MAIN JS =====-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
